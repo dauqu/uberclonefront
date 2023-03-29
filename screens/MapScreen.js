@@ -14,7 +14,7 @@ const MapScreen = () => {
     <ScrollView>
       <Image
         source={{
-          uri: "https://www.medianama.com/wp-content/uploads/2018/06/Screenshot_20180619-112715.png.png",
+          uri: "https://s.wsj.net/public/resources/images/BN-XS108_201803_E_20180301182540.gif",
         }}
         style={{
           width: "100%",
