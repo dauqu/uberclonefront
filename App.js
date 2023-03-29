@@ -13,6 +13,7 @@ import Body from "./screens/Body";
 import Profile from "./screens/Profile";
 import MainScreen from "./screens/MainScreen";
 import Activity from "./screens/Activity";
+import Services from "./screens/Services";
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -73,6 +74,13 @@ export default function App() {
             <Stack.Screen
               name="ActiviytScreen"
               component={Activity}
+              options={{
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen
+              name="Services"
+              component={Services}
               options={{
                 headerShown: false,
               }}

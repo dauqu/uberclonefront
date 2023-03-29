@@ -8,6 +8,7 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Activity from "../screens/Activity";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
+import Services from "../screens/Services";
 const BottomTabNav = () => {
   const Tab = createMaterialBottomTabNavigator();
 
@@ -28,8 +29,8 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        name="MapScreen"
-        component={MapScreen}
+        name="Services"
+        component={Services}
         options={{
           headerShown: false,
           tabBarLabel: "Services",
