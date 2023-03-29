@@ -122,9 +122,6 @@ const Login = () => {
               borderRadius: 5,
               marginTop: 10,
             }}
-            onPress={() => {
-              navigate.navigate("Profile");
-            }}
           >
             <Text
               style={{
@@ -139,7 +136,7 @@ const Login = () => {
         </View>
         <View>
           <TouchableOpacity
-            onPress={() => navigate.navigate("Body")}
+            onPress={() => navigate.navigate("MainScreen")}
             // onPress={handleLogin}
             style={{
               backgroundColor: "black",
