@@ -16,7 +16,7 @@ const NavOptions = () => {
       id: "456",
       title: "Order food",
       image: "https://links.papareact.com/28w",
-      screen: "EatsScreen",
+      screen: "MapScreen",
     },
   ];
 

@@ -34,7 +34,7 @@ export default function App() {
               name="MapScreen"
               component={MapScreen}
               options={{
-                headerShown: false,
+                headerShown: true,
               }}
             />
             <Stack.Screen
