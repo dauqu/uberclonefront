@@ -6,6 +6,8 @@ import Body from "../screens/Body";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import AntDesign from "react-native-vector-icons/AntDesign";
+import Activity from "../screens/Activity";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 const BottomTabNav = () => {
   const Tab = createMaterialBottomTabNavigator();
 
@@ -34,6 +36,21 @@ const BottomTabNav = () => {
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="apple-keyboard-command"
+              color={color}
+              size={26}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="ActiviytScreen"
+        component={Activity}
+        options={{
+          headerShown: false,
+          tabBarLabel: "Activiyt",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5
+              name="clipboard-list"
               color={color}
               size={26}
             />

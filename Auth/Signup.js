@@ -147,8 +147,8 @@ const Signup = () => {
           }}
         >
           <TouchableOpacity
-            // onPress={() => navigate.navigate("Login")}
-            onPress={() => handlesignup()}
+            onPress={() => navigate.navigate("Login")}
+            // onPress={() => handlesignup()}
             style={{
               backgroundColor: "black",
               padding: 10,

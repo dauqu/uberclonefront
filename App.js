@@ -12,6 +12,7 @@ import Signup from "./Auth/Signup";
 import Body from "./screens/Body";
 import Profile from "./screens/Profile";
 import MainScreen from "./screens/MainScreen";
+import Activity from "./screens/Activity";
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -65,6 +66,13 @@ export default function App() {
             <Stack.Screen
               name="MainScreen"
               component={MainScreen}
+              options={{
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen
+              name="ActiviytScreen"
+              component={Activity}
               options={{
                 headerShown: false,
               }}
