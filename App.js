@@ -16,6 +16,7 @@ import Activity from "./screens/Activity";
 import Services from "./screens/Services";
 export default function App() {
   const Stack = createNativeStackNavigator();
+  // disable yellow warnings
   return (
     <Provider store={Store}>
       <StatusBar hidden />

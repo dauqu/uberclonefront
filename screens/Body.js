@@ -12,6 +12,8 @@ import tw from "twrnc";
 import BottomTabNav from "../components/BottomTabNav";
 import ImgSlider from "../components/ImgSlider";
 const Body = () => {
+  console.disableYellowBox = true;
+
   return (
     <ScrollView>
       <View style={tw`p-5`}>
