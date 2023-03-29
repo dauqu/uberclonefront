@@ -6,14 +6,24 @@ import {
   View,
   Image,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import tw from "twrnc";
 import { Icon } from "react-native-elements/dist/icons/Icon";
 import PhoneInput from "react-native-phone-number-input";
 import { useNavigation } from "@react-navigation/native";
+import { API } from "../constant/API";
+import axios from "axios";
 
 const Login = () => {
   const navigate = useNavigation();
+  const [value, setValue] = useState();
+  const [formattedValue, setFormattedValue] = useState("");
+
+  const handleLogin = () => {
+    console.log(value);
+    console.log(formattedValue);
+  };
+
   return (
     <ScrollView>
       <View
@@ -49,6 +59,13 @@ const Login = () => {
             autoFocus
             containerStyle={styles.phoneContainer}
             textContainerStyle={styles.textInput}
+            onChangeText={(text) => {
+              setValue(text);
+            }}
+            value={value}
+            onChangeFormattedText={(text) => {
+              setFormattedValue(text);
+            }}
           />
         </View>
         <View
@@ -105,6 +122,9 @@ const Login = () => {
               borderRadius: 5,
               marginTop: 10,
             }}
+            onPress={() => {
+              navigate.navigate("Profile");
+            }}
           >
             <Text
               style={{
@@ -120,6 +140,7 @@ const Login = () => {
         <View>
           <TouchableOpacity
             onPress={() => navigate.navigate("Body")}
+            // onPress={handleLogin}
             style={{
               backgroundColor: "black",
               padding: 10,
